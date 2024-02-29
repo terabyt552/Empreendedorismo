@@ -1,0 +1,683 @@
+:root {
+  --cor-principal:#326F96;
+  --cor-roxo:#285A79 /*#EB8B00*/;
+  --branco:rgb(230, 230, 230);
+  --cor-laranja: #EB8900;
+}
+
+@font-face {
+  font-family: 'MulishMedium';
+  src: url('../Fonts/Mulish/static/Mulish-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoSlabBold';
+  src: url('../Fonts/RobotoSlab/static/RobotoSlab-Bold.ttf');
+}
+
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('../Fonts/LinuxLibertine/LinLibertine_RZ.ttf');
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('../Fonts/sourceserifpro/SourceSerifPro-Regular.ttf');
+}
+
+body, p, ul {
+  margin: 0;
+ background-color: #FCFEE9;
+
+}
+
+h2 {
+  font-family:'RobotoSlabBold', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:#1F3542;
+  border-bottom: 1px solid #6BB1CB;
+  font-size: 1.4em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family:'RobotoSlabBold', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:white;
+  font-size: 1.4em;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h4 {
+  font-family:'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  font-size: 1em;
+  color:#ffffff;
+  margin: 0;
+  border-bottom: 1px solid white; 
+}
+
+p {
+  margin-top: 2px;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1;
+ min-height: 94px;
+  background-color: transparent;
+  color: #1F3542;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.NavMenu {
+  z-index: 1;
+  position: absolute;
+  background-color:#495E63;
+  border-radius: 20px;
+  max-height: 0vh;
+  max-width: 0vw;
+  margin-top: 80px;
+  margin-left: 2vh;
+  height: 240px;
+  overflow: hidden;
+  width: 190px;
+  transition: max-width 0.5s;
+  transition: max-height 0.5s;
+  border-top: none;
+}
+
+
+.mostrar {
+  max-width: 100vw; 
+  max-height: 100vh;
+  border-bottom: var(--cor-principal) 1px solid;
+  border-left: var(--cor-principal) 1px solid;
+  border-right: var(--cor-principal) 1px solid;
+}
+
+#Menu {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding-right: 2vh;
+}
+
+.MenuLine {
+  width: 10vw;
+ 
+}
+
+.LinkMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px 12px 0px;
+  background-color: #6BB1CB;
+  border-radius: 15px;
+  color: white;
+  margin: 8px 0px 8px;
+  width: 120px;
+    font-family: MulishMedium;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.LinkMenu:hover {
+  background-color: #EA5F34;
+  font-size: 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FCFEE9;
+  max-width: 100vw;
+}
+
+#HeaderElements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 87vw;
+  height: 94px;
+}
+
+#HeaderLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Logo {
+  width: 220px;
+  height: 48px;
+  margin-left: 1vw;
+}
+
+.UnitinsIcon {
+  width: 46PX;
+  height: 44PX;
+  padding: 2px;
+  
+}
+
+#HeaderIconsLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SectionSlider {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 100%;
+  line-height: 1.4;
+}
+.Div1 {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  padding: 2vw;
+  background-color: #D1D5B4;
+  width: 87vw;
+  border-radius: 20px;
+
+}
+
+.LinksText {
+  text-decoration: none;
+  background-color: #6BB1CB;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+ margin-right: 4.5vw;
+  
+
+}
+#h2Conteudo {
+  border: none;
+  color: white;
+  
+  }
+
+.TitleListLinksText {
+  color: #293fcd;
+  text-decoration: none;
+  font-family:'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+.TitleListLinksText:active {
+  color: white;
+}
+
+.ListLinksText {
+  background-color: transparent;
+}
+
+li::marker {
+  color: #EA5F34;
+}
+
+.DivLinksText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2vw;
+}
+
+
+
+
+.LinkText {
+  color: #293fcd;
+  text-decoration: none;
+  font-family:'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  font-size: 0.9em;
+}
+
+.LinkText:active {
+  color: white;
+}
+
+#ImgBackground1 {
+ width:62vw;
+
+
+}
+
+#ImgBackground2 {
+  width: 62vw;
+  max-height: 600px ;
+}
+
+.TituloGeral {
+  position: relative;
+  font: inherit;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  
+  
+  font-family:'RobotoSlabBold', sans-serif,  Georgia,  'Times New Roman', Times;
+  font-size: 1.7em;
+  color:#1F3542;
+  border-bottom: 1px solid #6BB1CB;
+  width: 100%;
+}
+
+.Flaps {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  padding-right: 5vw;
+}
+
+#Flaps1 {
+  max-width: inherit;
+}
+#Flaps2 {
+  max-width: inherit;
+}
+
+#Flaps3 {
+  max-width: inherit;
+}
+#Flaps4 {
+  max-width: inherit;
+}
+
+
+
+.TitleFlaps {
+  max-width: inherit;
+  font-family:'RobotoSlabBold', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:#1F3542;
+  font-size: 2rem;
+  border-bottom: 1px solid #6BB1CB;
+  text-align: center;
+}
+
+.Text {
+  max-width: inherit;
+  background-color: transparent;
+  font-size:  1.2rem;
+  line-height: 1.5714285;
+  font-family: 'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:#1F3542;
+  text-align: justify;
+}
+
+.DivGraphicFlap {
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.GraphicFlap {
+  max-width: inherit;
+  background-color:#6BB1CB;
+  border-radius: 20px;
+  padding: 5px;
+  width: 500px;
+  text-align: justify;
+}
+
+.NavFlapExtra {
+  width: inherit;
+}
+
+.GraphicFlapExtra {
+  max-width: inherit;
+  background-color:#EB8900;
+  border-radius: 20px;
+  padding: 5px;
+  width: 420px;
+  text-align: justify;
+}
+
+.MenuFlapExtra {
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hellipsisbar {
+  color: white;
+padding-top: 40px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.LinkSubTitleAngleDown {
+  list-style: none; 
+  color: white;
+}
+
+.anglebarDown {
+padding-top: 40px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.NavFlapExtra {
+  list-style: none;
+  padding: 10px;
+  overflow: hidden;
+  max-height: 37px;
+  transition: max-height 0.5s;
+  max-width: inherit;
+  background-color:#6BB1CB;
+  border-radius: 20px;
+  padding: 10px;
+  width: 500px;
+  text-align: justify;
+}
+
+.UlFlapExtra {
+  max-width: inherit;
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0;
+}
+
+.lIFlapExtra {
+  
+  position: relative;
+  max-width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DivFlapExtra {
+  display: flex;
+  max-width: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#EB8900;
+  border-radius: 20px;
+  padding: 5px;
+  width: 480px;
+  text-align: justify;
+}
+
+.TextFLapExtra {
+  background-color: transparent;
+  max-width: inherit;
+  background-color: transparent;
+  font-size:  1.2rem;
+  line-height: 1.5714285;
+  font-family: 'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:white;
+  text-align: justify;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+.MostrarFlapExtra {
+  max-height: inherit;
+}
+
+footer {
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 87vw;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#PainelFooter1 {
+  width: 87vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MenuLineFooter {
+  padding-right: 15px;
+}
+
+#MenuFooter {
+  padding-left: 5vw;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border: none;
+
+}
+
+#DivLogosFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LogoFooter {
+  width: 220px;
+  height: 48px;
+padding-right: 3vw;
+}
+
+#DivSelos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#SeloSsl {
+  width: 170px;
+  padding-bottom: 4vh;
+}
+
+#GitHubLogo {
+  width: 110px;
+  padding-top: 4vh;
+}
+
+.TextFinal {
+  font-size:  1rem;
+  line-height: 1.5714285;
+  font-family: 'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+}
+
+/*Específicos da PagInformações*/
+
+.PagInform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#AreaCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#6BB1CB;
+  border-radius: 20px;
+  padding: 8px;
+
+}
+
+.ContGeral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 25px;
+}
+
+.Cont {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  background-color:#EB8900;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.User {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.IconUser {
+  width: 48px;
+
+}
+
+.IconCont  {
+  width: 36px;
+  padding-right: 20px;
+}
+
+.TextUser {
+  max-width: inherit;
+  background-color: transparent;
+  font-size:  1rem;
+  line-height: 1.5714285;
+  font-family: 'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:#1F3542;
+  text-align: justify;
+}
+
+/*Epecificos da PagCreditos*/
+
+.FlapCreditos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #6BB1CB;
+}
+
+.DivCreditos {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #EB8900;
+  max-width: inherit;
+  font-size:  1rem;
+  line-height: 1.5714285;
+  font-family: 'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:#1F3542;
+  text-align: justify;
+}
+
+/*Especificos da PagGlossario*/
+.FlapGlossario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #6BB1CB;
+}
+
+.DivGlossario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #EB8900;
+  max-width: inherit;
+  font-size:  1rem;
+  line-height: 1.5714285;
+  font-family: 'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  color:#1F3542;
+  text-align: justify;
+}
+
+@media (max-width: 1209px) {
+  .LogoFooter {
+    padding-left: 0vw;
+    padding-bottom: 0vh;
+
+  }
+
+  .TextFinal {
+    font-size:  0.7rem;
+    line-height: 1.5714285;
+    font-family: 'MulishMedium', sans-serif,  Georgia,  'Times New Roman', Times;
+  }
+
+  #SeloSsl {
+    width: 150px;
+  }
+
+  #DivLogosFooter {
+  display: flex;
+  flex-direction: column;
+  }
+ .Div1 {
+  width: 90vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ .Flaps {
+  max-width: 87vw;
+  padding-right: 0vw;
+ }
+
+ #TitleFlaps {
+  text-align: center;
+}
+
+#ImgBackground1 {
+  width:90vw;
+ }
+
+
+}
+
+
